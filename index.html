@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Teacher Taking App</title>
+    <script type="module" crossorigin src="index-CeRGnkK5.js"></script>
+    <link rel="stylesheet" crossorigin href="index-D7Xh007o.css" />
+  </head>
+  <body>
+    <section
+      class="main-wrapper relative h-screen w-screen bg-green-100 flex items-center justify-center"
+    >
+      <!-- Header Start Here -->
+      <div
+        class="header fixed top-0 left-0 w-full flex items-center justify-center py-3 bg-green-800"
+      >
+        <h2 class="title text-white text-3xl text-center font-semibold">
+          Random Teacher Taking App
+        </h2>
+      </div>
+      <!-- Header End Here -->
+
+      <!-- Content Section Start Here -->
+      <div
+        class="content-wrapper flex flex-col items-center justify-center gap-20"
+      >
+        <!-- Form Block start here -->
+        <div
+          class="form-wrapper max-w-[400px] flex items-center justify-center flex-col gap-6 border-2 border-green-300 rounded-xl p-10"
+        >
+          <h2
+            class="main-title font-semibold text-black text-3xl titlecase inline-block"
+          >
+            Enter Teachers Name
+          </h2>
+
+          <input
+            required
+            name="name-genarator"
+            id="teacher"
+            class="w-full text-xl py-2 px-3 border-2 border-green-400 transition-colors duration-300 focus:border-red-500 outline-none shadow-none rounded-lg"
+            type="text"
+            placeholder="Enter Teacher name"
+          />
+          <input
+            id="addTeacher"
+            class="text-xl font-semibold text-white bg-green-600 px-6 pt-2 pb-2 cursor-pointer rounded-md w-full transition-colors duration-300 hover:bg-red-500"
+            type="button"
+            value="Add Teacher"
+          />
+        </div>
+        <!-- Form Block end here -->
+
+        <!-- Pick a Teacher Block start here -->
+
+        <div
+          class="pick-contents max-w-[400px] flex items-center justify-center flex-col border-2 border-green-300 rounded-xl p-6"
+        >
+          <h2
+            class="main-title font-semibold text-black text-3xl titlecase inline-block text-center"
+          >
+            Pick Your Today Teacher
+          </h2>
+
+          <button
+            id="main-btn"
+            class="main-btn my-6 bg-green-600 px-10 py-3 text-xl text-white cursor-pointer rounded-md transition-colors duration-300 font-semibold hover:bg-yellow-400 hover:text-black"
+          >
+            Pickup Teacher Now!
+          </button>
+        </div>
+        <!-- Pick a Teacher Block end here -->
+      </div>
+      <!-- Content Section End Here -->
+
+      <!-- Add a teacher success popup block Start -->
+      <div
+        id="addTeacherSuccess"
+        class="add-teacher-success-wrapper w-screen h-screen absolute bg-transparent flex items-center justify-center"
+      >
+        <div
+          class="add-teacher-success-contents w-[400px] h-60 bg-white rounded-xl flex items-center justify-evenly flex-col p-6 shadow-xl"
+        >
+          <h2 class="text-2xl text-green-600 font-bold">
+            Your Teacher name is Added
+          </h2>
+          <button
+            id="addTeacherSuccessClose"
+            class="bg-red-500 text-xl font-semibold py-2 px-6 text-white rounded-md hover:bg-green-500 transition-colors duration-300"
+          >
+            Dismis
+          </button>
+        </div>
+      </div>
+      <!-- Add a teacher success popup block end -->
+
+      <!-- Add a teacher Error popup block Start -->
+      <div
+        id="addTeacherError"
+        class="add-teacher-error-wrapper w-screen h-screen absolute bg-transparent flex items-center justify-center"
+      >
+        <div
+          class="add-teacher-success-contents w-[400px] h-60 bg-red-500 rounded-xl flex items-center justify-evenly flex-col p-6 shadow-xl"
+        >
+          <h2 class="text-2xl text-white font-bold text-center">
+            Please enter a valid Teacher name.!
+          </h2>
+          <button
+            id="addTeacherErrorClose"
+            class="bg-yellow-500 text-xl font-semibold py-2 px-6 text-black rounded-md hover:bg-green-500 hover:text-white transition-colors duration-300"
+          >
+            Dismis
+          </button>
+        </div>
+      </div>
+      <!-- Add a teacher Error popup block end -->
+
+      <!-- Popup Section Start Here -->
+      <div
+        id="popup"
+        class="popup-wrapper absolute w-screen h-screen bg-transparent flex items-center justify-center"
+      >
+        <div
+          class="popup w-[400px] h-60 bg-white rounded-lg flex items-center flex-col justify-center shadow-xl"
+        >
+          <div
+            class="popup-contents flex items-center justify-center flex-col gap-6"
+          >
+            <h2 class="popup-title text-2xl font-semibold">
+              Here is your today teacher name
+            </h2>
+            <h3 id="result" class="result text-2xl font-bold text-green-500">
+              Zahid Hasan
+            </h3>
+          </div>
+          <div class="popup-button">
+            <button
+              id="dismis"
+              class="popup-btn bg-red-500 text-white pt-1 pb-2 px-6 inline-block my-6 rounded-md text-2xl hover:bg-green-600 transition-colors duration-300"
+            >
+              Dismis
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Popup Section End Here -->
+      <!--  -->
+    </section>
+  </body>
+</html>
