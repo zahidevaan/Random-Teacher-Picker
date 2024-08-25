@@ -8,14 +8,16 @@
     <link rel="stylesheet" crossorigin href="index-D7Xh007o.css" />
   </head>
   <body>
-    <section
+  <section
       class="main-wrapper relative h-screen w-screen bg-green-100 flex items-center justify-center"
     >
       <!-- Header Start Here -->
       <div
         class="header fixed top-0 left-0 w-full flex items-center justify-center py-3 bg-green-800"
       >
-        <h2 class="title text-white text-3xl text-center font-semibold">
+        <h2
+          class="title text-white text-2xl lg:text-3xl text-center font-semibold"
+        >
           Random Teacher Taking App
         </h2>
       </div>
@@ -23,14 +25,14 @@
 
       <!-- Content Section Start Here -->
       <div
-        class="content-wrapper flex flex-col items-center justify-center gap-20"
+        class="content-wrapper flex flex-col items-center justify-center gap-6"
       >
         <!-- Form Block start here -->
         <div
-          class="form-wrapper max-w-[400px] flex items-center justify-center flex-col gap-6 border-2 border-green-300 rounded-xl p-10"
+          class="form-wrapper max-w-[400px] box-border flex items-center justify-center flex-col gap-4 border-2 border-green-300 rounded-xl p-10"
         >
           <h2
-            class="main-title font-semibold text-black text-3xl titlecase inline-block"
+            class="main-title font-semibold text-black text-3xl text-center inline-block"
           >
             Enter Teachers Name
           </h2>
@@ -52,10 +54,16 @@
         </div>
         <!-- Form Block end here -->
 
-        <!-- Pick a Teacher Block start here -->
-
+        <!-- Display Avaiable Teachers Block Start -->
         <div
-          class="pick-contents max-w-[400px] flex items-center justify-center flex-col border-2 border-green-300 rounded-xl p-6"
+          id="displayTeachers"
+          class="display-available-teachers-wrapper box-border max-w-[400px] border-2 border-green-300 p-3 flex items-center justify-start flex-wrap gap-2 rounded-xl"
+        ></div>
+        <!-- Display Avaiable Teachers Block End -->
+
+        <!-- Pick a Teacher Block start here -->
+        <div
+          class="pick-contents max-w-[400px] box-border flex items-center justify-center flex-col border-2 border-green-300 rounded-xl p-4"
         >
           <h2
             class="main-title font-semibold text-black text-3xl titlecase inline-block text-center"
@@ -147,5 +155,6 @@
       <!-- Popup Section End Here -->
       <!--  -->
     </section>
+
   </body>
 </html>
